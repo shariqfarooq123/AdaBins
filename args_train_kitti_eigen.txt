@@ -1,0 +1,29 @@
+--bs 16
+--dataset kitti
+--distributed
+--lr 0.000357
+--wd 0.1
+--div_factor 25
+--final_div_factor 100
+--epochs 25
+--workers 11
+--name UnetAdaptiveBins
+--n_bins 256
+--norm=linear
+--w_chamfer 0.1
+--data_path ../dataset/kitti/raw
+--gt_path ../dataset/kitti/gts
+--filenames_file ./train_test_inputs/kitti_eigen_train_files_with_gt.txt
+--input_height 352
+--input_width 704
+--min_depth 0.001
+--max_depth 80
+--do_random_rotate
+--degree 1.0
+--data_path_eval ../dataset/kitti/raw
+--gt_path_eval ../dataset/kitti/gts
+--filenames_file_eval ./train_test_inputs/kitti_eigen_test_files_with_gt.txt
+--min_depth_eval 1e-3
+--max_depth_eval 80
+--do_kb_crop
+--garg_crop
