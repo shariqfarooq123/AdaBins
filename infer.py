@@ -138,7 +138,7 @@ class InferenceHelper:
             image = np.asarray(Image.open(f), dtype='float32') / 255.
             image = transform(image).unsqueeze(0).to(self.device)
 
-            final = self.predict(image)
+            centers, final = self.predict(image)
             # final = final.squeeze().cpu().numpy()
 
             final = (final * self.saving_factor).astype('uint16')
