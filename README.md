@@ -29,7 +29,7 @@ bin_edges, predicted_depth = model(example_rgb_batch)
 
 # KITTI
 model = UnetAdaptiveBins.build(n_bins=N_BINS, min_val=MIN_DEPTH, max_val=MAX_DEPTH_KITTI)
-pretrained_path = "./pretrained/AdaBins_nyu.pt"
+pretrained_path = "./pretrained/AdaBins_kitti.pt"
 model, _, _ = model_io.load_checkpoint(pretrained_path, model)
 
 bin_edges, predicted_depth = model(example_rgb_batch)
