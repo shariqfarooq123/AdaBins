@@ -6,6 +6,14 @@ Official implementation of [Adabins: Depth Estimation using adaptive bins](https
 * You can download the pretrained models "AdaBins_nyu.pt" and "AdaBins_kitti.pt" from [here](https://drive.google.com/drive/folders/1nYyaQXOBjNdUJDsmJpcRpu6oE55aQoLA?usp=sharing)
 * You can download the predicted depths in 16-bit format for NYU-Depth-v2 official test set and KITTI Eigen split test set [here](https://drive.google.com/drive/folders/1b3nfm8lqrvUjtYGmsqA5gptNQ8vPlzzS?usp=sharing)
 
+## Colab Demo 
+
+<p>
+<a href="https://colab.research.google.com/drive/1oxHflMh6eAJS7BhvP1amHvuBSirlS5Vl?usp=sharing" target="_parent">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+</p>
+
 ## Inference
 Move the downloaded weights to a directory of your choice (we will use "./pretrained/" here). You can then use the pretrained models like so:
 
@@ -56,6 +64,5 @@ infer_helper.predict_dir("/path/to/input/dir/containing_only_images/", "path/to/
 ```
 ## TODO:
 * Add instructions for Evaluation and Training.
-* Add Colab demo
 * Add UI demo
 * Remove unnecessary dependencies
